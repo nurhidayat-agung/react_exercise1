@@ -1,23 +1,19 @@
-import './App.css';
-import Footer from './Components/Footer'
-import Header from './Components/Header'
-import SideBar from './Components/SideBar'
-import Main from './Components/Main'
-
+import "./style.css"
+import Button from 'react-bootstrap/Button';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-        <div className="row">
-            <div className="col-sm-6">
-                <SideBar />
-            </div>
-            <div className="col-sm-6">
-                <Main />
-            </div>
-        </div>
-      <Footer />
+    <div className="bg-color">
+      <h1 className="white-color">Hallo</h1>
+        <Button variant="primary">Primary</Button>{' '}
+        <Button variant="secondary">Secondary</Button>{' '}
+        <Button variant="success">Success</Button>{' '}
+        <Button variant="warning">Warning</Button>{' '}
+        <Button variant="danger">Danger</Button>{' '}
+        <Button variant="info">Info</Button>{' '}
+        <Button variant="light">Light</Button>{' '}
+        <Button variant="dark">Dark</Button>
+        <Button variant="link">Link</Button>
     </div>
   );
 }
